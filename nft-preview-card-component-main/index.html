@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="NFT-Design.css">
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+
 </head>
+
 <body>
 
-  Equilibrium #3429
+  <main class="flex-container">
+    <!-- Container used to place the card in the middle of the page -->
 
-  Our Equilibrium collection promotes balance and calm.
+    <article class="card-container">
+      <!-- this is where the actual card will be created-->
+      <img src="images/image-equilibrium.jpg" alt="NFT Picture" height="auto" class="card_image">
 
-  0.041 ETH
-  3 days left
-  
+      <section>
+        <div class="inside_element text" style="color:white;">
+          Equilibrium #3429
+        </div>
+        <div class="inside_element text" style="color:hsl(215, 51%, 70%);">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+
+        <div class="inside_element">
+          <span>
+            <img src="images/icon-ethereum.svg" alt="ethereum pic" style="margin-right: 5px;">
+            <span class="text" style="color: hsl(181, 94%, 38%);">0.041 ETH</span>
+          </span>
+
+          <span id="float">
+            <img src="images/icon-clock.svg" alt="clock">
+            <span class="text" style="color:hsl(215, 51%, 70%);">3 days left</span>
+          </span>
+        </div>
+
+        <hr>
+
+        <div class = "inside_element">
+          <span class ="text"> <span style="color:hsl(215, 51%, 70%); ;">Creation of </span><span style ="color:white;">Eugene Clark</span>
+        </span>
+        </div>
+      </section>
+    </article>
+
+  </main>
+
+
+
+
+
   Creation of Jules Wyvern
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
